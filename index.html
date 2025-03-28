@@ -3,92 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>My Certificates</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .certificate {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .btn-group {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            color: white;
+        }
+        .view-btn {
+            background-color: #28a745;
+        }
+        .view-btn:hover {
+            background-color: #218838;
+        }
+        .download-btn {
+            background-color: #007bff;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-    <div id="navbar">
-        <a href="#welcome-section">Welcome</a>
-        <a href="#projects">Projects</a>
-        <a id="profile-link" href="https://github.com/Onolecrypt" target="_blank">GitHub</a>
+    <h1>My Certificates</h1>
+
+    <div class="certificates">
+        <div class="certificate">
+            <img src="images/html-certificate.jpg" alt="HTML Certificate">
+            <div class="btn-group">
+                <a href="certificates/html-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                <a href="certificates/html-certificate.jpg" download class="btn download-btn">Download</a>
+            </div>
+        </div>
+        <div class="certificate">
+            <img src="images/css-certificate.jpg" alt="CSS Certificate">
+            <div class="btn-group">
+                <a href="certificates/css-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                <a href="certificates/css-certificate.jpg" download class="btn download-btn">Download</a>
+            </div>
+        </div>
+        <div class="certificate">
+            <img src="images/js-certificate.jpg" alt="JavaScript Certificate">
+            <div class="btn-group">
+                <a href="certificates/js-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                <a href="certificates/js-certificate.jpg" download class="btn download-btn">Download</a>
+            </div>
+        </div>
+        <div class="certificate">
+            <img src="images/python-certificate.jpg" alt="Python Certificate">
+            <div class="btn-group">
+                <a href="certificates/python-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                <a href="certificates/python-certificate.jpg" download class="btn download-btn">Download</a>
+            </div>
+        </div>
     </div>
 
-    <section id="welcome-section">
-        <h1>Emmanuel's Portfolio Site</h1>
-        <img src="emmanuel.jpeg" alt="Emmanuel Picture" id="profile-pic">
-        <p>Welcome to my portfolio! I am a passionate web developer with a keen interest in creating dynamic and responsive web applications.My Certificates can be viewed by clicking on the icons below.</p>
-        <p>Feel free to explore my work and reach out if you have any questions or opportunities for collaboration!</p>
-        <p>Thank you for visiting!</p>
-        <p>Best regards, Emmanuel Olum</p>
-
-        <!-- Tech Stack Section -->
-        <div id="tech-stack">
-            <a href="YOUR_HTML_CERTIFICATE_URL" target="_blank">
-                <img src="html.png" alt="HTML5 Certificate" class="tech-icon" id="html-icon">
-            </a>
-            <a href="YOUR_CSS_CERTIFICATE_URL" target="_blank">
-                <img src="css.png" alt="CSS3 Certificate" class="tech-icon" id="css-icon">
-            </a>
-            <a href="YOUR_JS_CERTIFICATE_URL" target="_blank">
-                <img src="javascript.png" alt="JavaScript Certificate" class="tech-icon" id="js-icon">
-            </a>
-            <a href="YOUR_PYTHON_CERTIFICATE_URL" target="_blank">
-                <img src="python.png" alt="Python Certificate" class="tech-icon">
-            </a>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-tile">
-            <h3>Project 1</h3>
-            <p>Onole's Giraffe site.</p>
-            <a href="https://onolecrypt.github.io/fake-giraffe-site/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 2</h3>
-            <p>Calculator.</p>
-            <a href="https://onolecrypt.github.io/calculator/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 3</h3>
-            <p>Rock Paper Scissors Game.</p>
-            <a href="https://onolecrypt.github.io/rock-paper-scissors-game/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 4</h3>
-            <p>Coin Flip game.</p>
-            <a href="https://onolecrypt.github.io/calculator/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 5</h3>
-            <p>Calculator.</p>
-            <a href="https://onolecrypt.github.io/calculator/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 6</h3>
-            <p>Calculator.</p>
-            <a href="https://onolecrypt.github.io/calculator/" target="_blank">View Project</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Emmanuel Olum</p>
-    </footer>
-
-    <script>
-        document.getElementById('html-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('html.png') ? 'Webdesign Certificate.png' : 'html.png';
-        });
-
-        document.getElementById('css-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('css.png') ? 'Webdesign Certificate.png' : 'css.png';
-        });
-
-        document.getElementById('js-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('javascript.png') ? 'JS Certificate.png' : 'javascript.png';
-        });
-    </script>
 </body>
 </html>
