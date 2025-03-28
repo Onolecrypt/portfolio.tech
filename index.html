@@ -17,7 +17,7 @@
     <section id="welcome-section">
         <h1>Emmanuel's Portfolio Site</h1>
         <img src="emmanuel.jpeg" alt="Emmanuel Picture" id="profile-pic">
-        <p>Welcome to my portfolio! I am a passionate web developer with a keen interest in creating dynamic and responsive web applications.My Certificates can be viewed by clicking on the icons below</p>
+        <p>Welcome to my portfolio! I am a passionate web developer with a keen interest in creating dynamic and responsive web applications.My Certificates can be viewed by clicking on the icons below.</p>
         <p>Feel free to explore my work and reach out if you have any questions or opportunities for collaboration!</p>
         <p>Thank you for visiting!</p>
         <p>Best regards, Emmanuel Olum</p>
@@ -25,13 +25,13 @@
         <!-- Tech Stack Section -->
         <div id="tech-stack">
             <a href="YOUR_HTML_CERTIFICATE_URL" target="_blank">
-                <img src="html.png" alt="HTML5 Certificate" class="tech-icon">
+                <img src="html.png" alt="HTML5 Certificate" class="tech-icon" id="html-icon">
             </a>
             <a href="YOUR_CSS_CERTIFICATE_URL" target="_blank">
-                <img src="css.png" alt="CSS3 Certificate" class="tech-icon">
+                <img src="css.png" alt="CSS3 Certificate" class="tech-icon" id="css-icon">
             </a>
             <a href="YOUR_JS_CERTIFICATE_URL" target="_blank">
-                <img src="javascript.png" alt="JavaScript Certificate" class="tech-icon">
+                <img src="javascript.png" alt="JavaScript Certificate" class="tech-icon" id="js-icon">
             </a>
             <a href="YOUR_PYTHON_CERTIFICATE_URL" target="_blank">
                 <img src="python.png" alt="Python Certificate" class="tech-icon">
@@ -77,5 +77,18 @@
         <p>&copy; 2025 Emmanuel Olum</p>
     </footer>
 
+    <script>
+        document.getElementById('html-icon').addEventListener('click', function() {
+            this.src = this.src.endsWith('html.png') ? 'Webdesign Certificate.png' : 'html.png';
+        });
+
+        document.getElementById('css-icon').addEventListener('click', function() {
+            this.src = this.src.endsWith('css.png') ? 'Webdesign Certificate.png' : 'css.png';
+        });
+
+        document.getElementById('js-icon').addEventListener('click', function() {
+            this.src = this.src.endsWith('javascript.png') ? 'JS Certificate.png' : 'javascript.png';
+        });
+    </script>
 </body>
 </html>
