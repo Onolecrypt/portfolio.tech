@@ -15,24 +15,29 @@
         }
 
         h1 {
-            font-size: 36px; /* Increased size */
-            color: #004080; /* Deep blue color for better visibility */
+            font-size: 36px;
+            color: #004080;
+            margin-top: 80px; /* Adjusted to ensure visibility */
         }
 
         h2 {
             color: #333;
         }
 
+        #welcome-section {
+            padding-top: 100px; /* Added padding to prevent navbar overlap */
+        }
+
         #welcome-section p {
-            font-size: 18px; /* Slightly larger paragraph font */
-            line-height: 1.6; /* Improve readability */
+            font-size: 18px;
+            line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: auto;
             padding: 10px;
         }
 
-        .certificates {
+        .certificates, .projects {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -40,7 +45,7 @@
             padding: 20px;
         }
 
-        .certificate {
+        .certificate, .project-tile {
             background: white;
             padding: 15px;
             border-radius: 10px;
@@ -96,6 +101,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            z-index: 1000; /* Ensure navbar stays on top */
         }
 
         #navbar a {
@@ -127,29 +133,24 @@
     <section id="welcome-section">
         <h1>Emmanuel's Portfolio Site</h1>
         <img src="emmanuel.jpeg" alt="Emmanuel Picture" id="profile-pic">
-        <p>I am a passionate web developer skilled in HTML, CSS, JavaScript, and Python.
-            I enjoy building interactive, responsive, and user-friendly web applications that solve real-world problems. 
-            My expertise in front-end development allows me to craft visually appealing designs, while my knowledge of JavaScript and Python enables me to implement dynamic functionality and backend logic.
-            I am always eager to learn new technologies, optimize performance, and enhance user experience. Whether it's crafting sleek interfaces, writing efficient code, or debugging complex issues, 
-            I take pride in every line of code I write.</p>
+        <p>I am a passionate web developer skilled in HTML, CSS, JavaScript, and Python...</p>
     </section>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="project-tile">
-            <h3>Project 1</h3>
-            <p>Onole's Giraffe site.</p>
-            <a href="https://onolecrypt.github.io/fake-giraffe-site/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 2</h3>
-            <p>Calculator.</p>
-            <a href="https://onolecrypt.github.io/calculator/" target="_blank">View Project</a>
-        </div>
-        <div class="project-tile">
-            <h3>Project 3</h3>
-            <p>Rock Paper Scissors Game.</p>
-            <a href="https://onolecrypt.github.io/rock-paper-scissors-game/" target="_blank">View Project</a>
+        <div class="projects">
+            <div class="project-tile">
+                <h3>Onole's Giraffe Site</h3>
+                <a href="https://onolecrypt.github.io/fake-giraffe-site/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Calculator</h3>
+                <a href="https://onolecrypt.github.io/calculator/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Rock Paper Scissors Game</h3>
+                <a href="https://onolecrypt.github.io/rock-paper-scissors-game/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
         </div>
     </section>
 
@@ -157,28 +158,28 @@
         <h2>My Certificates</h2>
         <div class="certificates">
             <div class="certificate">
-                <img src="html.png" alt="HTML Certificate">
+                <img src="certificates/html-certificate.jpg" alt="HTML Certificate">
                 <div class="btn-group">
-                    <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
-                    <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
+                    <a href="certificates/html-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                    <a href="certificates/html-certificate.jpg" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
-                <img src="css.png" alt="CSS Certificate">
+                <img src="certificates/css-certificate.jpg" alt="CSS Certificate">
                 <div class="btn-group">
-                    <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
-                    <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
+                    <a href="certificates/css-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                    <a href="certificates/css-certificate.jpg" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
-                <img src="javascript.png" alt="JavaScript Certificate">
+                <img src="certificates/javascript-certificate.jpg" alt="JavaScript Certificate">
                 <div class="btn-group">
-                    <a href="JS Certificate.png" target="_blank" class="btn view-btn">View</a>
-                    <a href="JS Certificate.png" download class="btn download-btn">Download</a>
+                    <a href="certificates/javascript-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                    <a href="certificates/javascript-certificate.jpg" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
-                <img src="python.png" alt="Python Certificate">
+                <img src="certificates/python-certificate.jpg" alt="Python Certificate">
                 <div class="btn-group">
                     <a href="certificates/python-certificate.jpg" target="_blank" class="btn view-btn">View</a>
                     <a href="certificates/python-certificate.jpg" download class="btn download-btn">Download</a>
