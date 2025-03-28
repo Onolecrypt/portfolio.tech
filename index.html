@@ -11,10 +11,27 @@
             text-align: center;
             background-color: #f4f4f4;
             margin: 0;
+            padding: 0;
         }
-        h1, h2 {
+
+        h1 {
+            font-size: 36px; /* Increased size */
+            color: #004080; /* Deep blue color for better visibility */
+        }
+
+        h2 {
             color: #333;
         }
+
+        #welcome-section p {
+            font-size: 18px; /* Slightly larger paragraph font */
+            line-height: 1.6; /* Improve readability */
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+
         .certificates {
             display: flex;
             flex-wrap: wrap;
@@ -22,42 +39,79 @@
             justify-content: center;
             padding: 20px;
         }
+
         .certificate {
             background: white;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             max-width: 300px;
+            text-align: center;
         }
+
         img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
+
         .btn-group {
             margin-top: 10px;
             display: flex;
             justify-content: center;
             gap: 10px;
         }
+
         .btn {
             padding: 8px 12px;
             border-radius: 5px;
             text-decoration: none;
             font-size: 14px;
             color: white;
-        }
+        }             
+
         .view-btn {
             background-color: #28a745;
         }
+
         .view-btn:hover {
             background-color: #218838;
         }
+
         .download-btn {
             background-color: #007bff;
         }
+
         .download-btn:hover {
             background-color: #0056b3;
+        }
+
+        #navbar {
+            background: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        #navbar a:hover {
+            background: #555;
+        }
+
+        #profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -78,7 +132,6 @@
             My expertise in front-end development allows me to craft visually appealing designs, while my knowledge of JavaScript and Python enables me to implement dynamic functionality and backend logic.
             I am always eager to learn new technologies, optimize performance, and enhance user experience. Whether it's crafting sleek interfaces, writing efficient code, or debugging complex issues, 
             I take pride in every line of code I write.</p>
-
     </section>
 
     <section id="projects">
@@ -104,21 +157,21 @@
         <h2>My Certificates</h2>
         <div class="certificates">
             <div class="certificate">
-                <img src="html.png" alt="HTML logo">
+                <img src="html.png" alt="HTML Certificate">
                 <div class="btn-group">
                     <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
                     <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
-                <img src="css.png" alt="CSS logo">
+                <img src="css.png" alt="CSS Certificate">
                 <div class="btn-group">
                     <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
                     <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
-                <img src="javascript.png" alt="JavaScript logo">
+                <img src="javascript.png" alt="JavaScript Certificate">
                 <div class="btn-group">
                     <a href="JS Certificate.png" target="_blank" class="btn view-btn">View</a>
                     <a href="JS Certificate.png" download class="btn download-btn">Download</a>
@@ -137,20 +190,6 @@
     <footer>
         <p>&copy; 2025 Emmanuel Olum</p>
     </footer>
-
-    <script>
-        document.getElementById('html-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('html.png') ? 'Webdesign Certificate.png' : 'html.png';
-        });
-
-        document.getElementById('css-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('css.png') ? 'Webdesign Certificate.png' : 'css.png';
-        });
-
-        document.getElementById('js-icon').addEventListener('click', function() {
-            this.src = this.src.endsWith('javascript.png') ? 'JS Certificate.png' : 'javascript.png';
-        });
-    </script>
 
 </body>
 </html>
