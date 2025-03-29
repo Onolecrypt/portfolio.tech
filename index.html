@@ -9,29 +9,33 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #091436;
             margin: 0;
             padding: 0;
         }
 
         h1 {
             font-size: 36px;
-            color: #004080;
-            margin-top: 80px; /* Adjusted to ensure visibility */
+            color: #d4d9df;
+            margin-top: 80px;
         }
 
+p {
+            font-size: 18px;
+            color: #d4d9df;
+        }
         h2 {
-            color: #333;
+            color: #d4d9df;
         }
-
+        
         #welcome-section {
-            padding-top: 100px; /* Added padding to prevent navbar overlap */
+            padding-top: 100px;
         }
 
         #welcome-section p {
             font-size: 18px;
             line-height: 1.6;
-            color: #333;
+            color: #d4d9df;
             max-width: 800px;
             margin: auto;
             padding: 10px;
@@ -45,19 +49,37 @@
             padding: 20px;
         }
 
-        .certificate, .project-tile {
+         .project-tile {
             background: white;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 300px;
+            width: 300px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             text-align: center;
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+        
+        
+        .certificate {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 150px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .certificate img {
+            width: 80px;
+            height: 50px;
+            object-fit: contain;
         }
 
         .btn-group {
@@ -73,7 +95,7 @@
             text-decoration: none;
             font-size: 14px;
             color: white;
-        }             
+        }
 
         .view-btn {
             background-color: #28a745;
@@ -84,11 +106,11 @@
         }
 
         .download-btn {
-            background-color: #007bff;
+            background-color: #333;
         }
 
         .download-btn:hover {
-            background-color: #0056b3;
+            background-color: #333;
         }
 
         #navbar {
@@ -101,7 +123,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            z-index: 1000; /* Ensure navbar stays on top */
+            z-index: 1000;
         }
 
         #navbar a {
@@ -132,8 +154,9 @@
 
     <section id="welcome-section">
         <h1>Emmanuel's Portfolio Site</h1>
-        <img src="emmanuel.jpeg" alt="Emmanuel Picture" id="profile-pic">
-        <p>I am a passionate web developer skilled in HTML, CSS, JavaScript, and Python...</p>
+        <img src="images/emmanuel.jpeg" alt="Emmanuel Picture" id="profile-pic">
+        <p>I am  Web Developer skilled in one of the most powerful technology Programming Languages</p>
+        <p>Check out my Stack below</p>
     </section>
 
     <section id="projects">
@@ -151,24 +174,44 @@
                 <h3>Rock Paper Scissors Game</h3>
                 <a href="https://onolecrypt.github.io/rock-paper-scissors-game/" target="_blank" class="btn view-btn">View Project</a>
             </div>
+            <div class="project-tile">
+                <h3>Cash Register</h3>
+                <a href="https://onolecrypt.github.io/cash-register/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Pokemon Search App</h3>
+                <a href="https://onolecrypt.github.io/pokemon-search/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Phone Validator</h3>
+                <a href="https://onolecrypt.github.io/phone-validator/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Utopia Sidebar</h3>
+                <a href="https://onolecrypt.github.io/sidebar-for-x-wesite/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
+            <div class="project-tile">
+                <h3>Classic Login Form</h3>
+                <a href="https://onolecrypt.github.io/classic-login-form/" target="_blank" class="btn view-btn">View Project</a>
+            </div>
         </div>
     </section>
 
     <section id="certificates">
-        <h2>My Certificates</h2>
+        <h2>My Tech Stack</h2>
         <div class="certificates">
             <div class="certificate">
                 <img src="html.png" alt="HTML logo">
                 <div class="btn-group">
                     <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
-                    <a href ="Webdesign Certificate.png" download class="btn download-btn">Download</a>
+                    <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
                 <img src="css.png" alt="CSS logo">
                 <div class="btn-group">
-                    <a href ="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
-                    <a href ="Webdesign Certificate.png" download class="btn download-btn">Download</a>
+                    <a href="Webdesign Certificate.png" target="_blank" class="btn view-btn">View</a>
+                    <a href="Webdesign Certificate.png" download class="btn download-btn">Download</a>
                 </div>
             </div>
             <div class="certificate">
@@ -181,7 +224,7 @@
             <div class="certificate">
                 <img src="python.png" alt="Python logo">
                 <div class="btn-group">
-                    <a href="certificates/python-certificate.jpg" target="_blank" class="btn view-btn">View</a>
+                    <a href="comin-python.png" alt="Python CS50 Havard Certificate ongoing and Coming Soon!"target="_blank" class="btn view-btn">View</a>
                     <a href="certificates/python-certificate.jpg" download class="btn download-btn">Download</a>
                 </div>
             </div>
@@ -189,7 +232,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Emmanuel Olum</p>
+        <p>&copy; 2025 Emmanuel Olum, all Rights Reserved</p>
     </footer>
 
 </body>
